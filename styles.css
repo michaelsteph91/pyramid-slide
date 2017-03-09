@@ -1,4 +1,8 @@
 h1 {
     font-size: 40px;
     font-family: Helvetica;
+    background-color: grey;
+    text-align: center;
+    padding-bottom: 70px;
+    color: orange;
 }

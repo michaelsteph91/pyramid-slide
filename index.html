@@ -2,18 +2,19 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script = src="pyramid.js"></script>
+    <link rel="icon" type="favicon">
         <title>Pyramid Slide</title>
 </head>
 <body>
     <div id="title_box">
         <h1>Pyramid Slide</h1>
+        <br></br>
     </div>
 
     <div id="choices">
 
-        <div id="selector">
-            <select>
+        <div id="selector_div">
+            <select id="selector" onchange="renderPyramid()">
                 <option>#</option>
                 <option>X</option>
                 <option>@</option>
@@ -21,8 +22,8 @@
             </select>
         </div>
 
-        <div id="slider">
-            <input type="range" name="points" min="0" max="16">
+        <div id="slider_div">
+            <input class="bar" type="range" id="slider" name="points" min="0" max="16" onchange="renderPyramid()">
         </div>
 
         <br></br>
@@ -31,5 +32,6 @@
 
     </div>
 
+    <script = src="pyramid.js"></script>
 </body>
 </html>
