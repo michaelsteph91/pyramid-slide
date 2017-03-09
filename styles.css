@@ -6,3 +6,9 @@ h1 {
     padding-bottom: 70px;
     color: orange;
 }
+
+.pyramid {
+    text-align: center;
+    color: red;
+    font-family: monospace;
+}
