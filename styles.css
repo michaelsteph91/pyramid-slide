@@ -1,18 +1,29 @@
 h1 {
-    font-size: 40px;
+    text-align: center;
+    color: orange
     font-family: Helvetica;
+}
+
+#main {
+    border:1px solid black;
+    padding-bottom: 200px;
+}
+
+#title-box{
+    border:1px solid black;
     background-color: grey;
-    text-align: center;
-    padding-bottom: 70px;
     color: orange;
+    font-family: Helvetica;
 }
 
-.pyramid {
+#selectors{
+    border: 1px solid black;
+    padding-bottom: 35px;
     text-align: center;
-    color: red;
-    font-family: monospace;
+    background-color: red;
 }
 
-#choices {
-    text-align: center;
+#pyramid {
+    text-align: right;
+    padding-right: 350px
 }

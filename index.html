@@ -6,27 +6,28 @@
         <title>Pyramid Slide</title>
 </head>
 <body>
-    <div id="title_box">
+<div id="main">
+    <div id="title-box">
         <h1>Pyramid Slide</h1>
-        <br></br>
     </div>
-
-    <div id="choices">
-            <select id="selector" onchange="renderPyramid()">
-                <option>#</option>
-                <option>X</option>
-                <option>@</option>
-                <option>$</option>
-            </select>
-
-            <input class="bar" type="range" id="slider" name="points" min="0" max="16" onchange="renderPyramid()">
+    <div id="other-box">
+        <div id="inside-box">
+            <div id="selectors">
+                <label>What brick</label>
+                <select id="selector" onchange="renderPyramid()">
+                    <option>#</option>
+                    <option>X</option>
+                    <option>@</option>
+                    <option>$</option>
+                </select>
+                <label>How high?</label>
+                <input class="bar" type="range" id="slider" name="points" min="0" max="16" onchange="renderPyramid()">
+            </div>
+            <div class="pyramid" id="pyramid">
+            </div>
         </div>
-
-        <br></br>
-
-        <div class="pyramid" id="pyramid"></div>
-
     </div>
+</div>
 
     <script = src="pyramid.js"></script>
 </body>

@@ -17,7 +17,7 @@ function drawPyramid(height,char) {
 
         var rowStr = "";
         for (var i = 0; i < numSpaces; i++) {
-            rowStr += ".";
+            rowStr += " ";
         }
         for (var i = 0; i < numBricks; i++) {
             rowStr += char;
