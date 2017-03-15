@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" type="favicon">
-        <title>Pyramid Slide</title>
-</head>
-<body>
-<div id="main">
-    <div id="title-box">
-        <h1>Pyramid Slide</h1>
-    </div>
-    <div id="other-box">
-        <div id="inside-box">
-            <div id="selectors">
-                <label>What brick</label>
-                <select id="selector" onchange="renderPyramid()">
-                    <option>#</option>
-                    <option>X</option>
-                    <option>@</option>
-                    <option>$</option>
-                </select> <br></br>
-                <form name="slider-form">
-                  <label>How high?</label>
-                  <input type="range" name="sliderName" id="slider" min="1" max="16"
-                  oninput="slideoutId.value = slider.value" onchange="renderPyramid()">
-                  <output name="slidervalName" id="slideoutId"></output>
-                </form>
-            </div>
-            <div class="pyramid" id="pyramid">
-            </div>
-        </div>
-    </div>
-</div>
 
-    <script = src="pyramid.js"></script>
+<head>
+    <title>HTML</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div id="main">
+    <h1>Pyramid Slide</h1>
+      <div id="main-inner">
+        <form id="both">
+        <label>Brick Symbol:</label>
+        <select id="selector" onchange="renderPyramid()">
+          <option>#</option>
+          <option>X</option>
+          <option>@</option>
+          <option>$</option>
+        </select>
+          <label>How high?</label>
+          <input type="range" name="sliderName" id="slider" min="1" max="16"
+          oninput="slideoutId.value = slider.value" onchange="renderPyramid()">
+          <output name="slidervalName" id="slideoutId"></output>
+        </form>
+          <div id="pyramid"></div>
+      </div>
+  </div>
+
+<script src="pyramid.js"></script>
+
 </body>
+
 </html>
