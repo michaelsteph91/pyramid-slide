@@ -31,3 +31,6 @@ function drawPyramid(height,char) {
        document.getElementById("pyramid").appendChild(rowElem);
    }
 }
+
+var b = document.getElementById("slider");
+b.addEventListener("input", renderPyramid);
